@@ -1,0 +1,4 @@
+Author: GembitskayaDarya <daxagemb@gmail.com>
+Date:   Mon Feb 12 21:21:36 2018 +0300
+
+    add .gitignore

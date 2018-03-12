@@ -1,0 +1,265 @@
+header{
+    background-color: black;
+    color: #FAD2E0;
+    font-size: 5vh;
+    font-style: oblique;
+    border-color: #FAD2E0;
+    width: 100vw;
+    height: 8vh;
+}
+
+#addPhoto{
+
+    background-color: white;
+   background-size: 25vh;
+
+   float: left;
+}
+
+ul{
+    display: block;
+     font-size: 4vh;
+   float:left;
+  margin: 0 0 0 2vw;
+    list-style: none;
+}
+ul:after{
+    display: block;
+    content: ' ';
+    clear: both;
+
+    float:none;
+}
+ul.menu > li{
+    float:left;
+ margin-left: 15%;
+}
+ul.menu > li > a{
+    display: block;
+    padding: 10px;
+color: white;
+    background-color: #FAD2E0;
+    text-decoration: none;
+}
+ul.menu > li > a:hover{
+    background-color: black;
+}
+ul.submenu{
+    display: none;
+    position: absolute;
+    width: 215px;
+    height: 350px;
+    margin: 0px 5px 5px 5px;
+    background-color: #FAD2E0;
+    border: 1px pink;
+}
+ul.submenu >li{
+    display: block;
+}
+ul.submenu >li > input{
+    display: block;
+    padding: 5px;
+    color: black;
+position: relative;
+    margin: 10px;
+    background-color: white;
+    text-decoration: none;
+}
+
+ul.submenu >li > font{
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    margin: 10px 0px 0px 60px;
+
+    text-decoration: none;
+}
+ul.submenu > li >input:hover{
+    text-decoration: underline;
+}
+#fitterButton{
+    font-size: 20px;
+    position: relative;
+    margin: 20px 0px 0px 50px;
+}
+
+ul.menu > li:hover > ul.submenu{
+    display: block;
+}
+#daxagram{
+
+   float: left;
+
+    margin-left: 30vw;
+    font-family: Arizonia, cursive;
+}
+#userName{
+    float:right;
+    font-size: 5vh;
+margin-right: 2vw;
+    margin-top: 1vh;
+        color:#AEDD90;
+}
+#exit{
+    float: right;
+    font-size: 4vh;
+    margin-right: 5vw;
+    margin-top: 1vh;
+    color:#AEDD90;
+    background-color: white;
+    border-color: #AEDD90;
+
+
+
+}
+
+
+.post{
+    float:left;
+    width: 45vw;
+
+    text-align: center;
+margin-top: 5vh;
+}
+.inf{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 7vw;
+align-items: left;
+    width: 30vw;
+    height: 15vh;
+}
+.photoBut{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.photoUserName{
+
+    float:left;
+
+     font-style: initial;
+    font-size: 4vh;
+}
+.photoShortDesctription{
+
+float: left;
+
+    font-style: initial;
+    font-size: 2.5vh;
+    color: darkgrey;
+}
+.photoHashtag{
+
+    float:left;
+
+    font-style: initial;
+    font-size: 2.5vh;
+    color: pink;
+}
+.photoDate{
+
+    float:left;
+
+
+    font-style: initial;
+    font-size: 2.5vh;
+    color: pink;
+}
+.photoLike{
+    background-color: white;
+    border-color: white;
+height: 6vh;
+margin-top: 7vh;
+
+    float: right;
+
+}
+.photoLike:active{
+    background: url("photo/like.png");
+    background-size: 35px;
+
+}
+.photoEdit{
+    background-color: white;
+    border-color: white;
+    height: 6vh;
+    margin-top: 7vh;
+
+    float:right;
+
+}
+.photoDelete{
+    background-color: white;
+    border-color: white;
+    margin-top: 7vh;
+    margin-right: 6vw;
+    height: 6vh;
+    float:right;
+
+}
+
+img{
+    clip:rect(100px,100px,100px,100px);
+}
+#loadMore{
+    float:left;
+    margin-left: 43vw;
+
+    padding: 10px 20px 10px 20px;
+    color: #FAD2E0;
+    background-color: aliceblue;
+    border-color: #FAD2E0;
+}
+footer{
+    color: pink;
+    float:left;
+    width: 100%;
+    margin-top: 4vh;
+    background-color:lightgrey ;
+    padding: 1vh;
+
+
+}
+.footer{
+
+    float: left;
+    margin-left: 9vw;
+}
+@media screen and (max-width: 700px){
+    .post{
+        width: 90vw;
+    }
+
+}
+     @media screen and (max-width: 820px) {
+
+         #daxagram{
+
+             float: left;
+
+             margin-left: 10vw;
+             font-family: Arizonia, cursive;
+         }
+
+     }
+@media screen and (max-width: 630px) {
+
+    header{
+
+        height: 16vh;
+    }
+
+}
+@media screen and (max-width: 350px) {
+
+    header{
+
+        height: 25vh;
+    }
+
+}

@@ -8,12 +8,22 @@ header{
     height: 8vh;
 }
 
+
 #addPhoto{
 
     background-color: white;
    background-size: 25vh;
 
    float: left;
+
+}
+#addPhotoPic{
+    height: 6vh;
+
+
+}
+#filterName{
+    margin-top: 2vh;
 }
 
 ul{
@@ -47,8 +57,9 @@ ul.menu > li > a:hover{
 ul.submenu{
     display: none;
     position: absolute;
-    width: 215px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
+    color: black;
     margin: 0px 5px 5px 5px;
     background-color: #FAD2E0;
     border: 1px pink;
@@ -82,17 +93,19 @@ ul.submenu > li >input:hover{
 #fitterButton{
     font-size: 20px;
     position: relative;
-    margin: 20px 0px 0px 50px;
+   float:left;
+    margin-left: 6vw;
+    margin-top: 2vh;
 }
 
 ul.menu > li:hover > ul.submenu{
     display: block;
 }
-#daxagram{
+.logo {
 
    float: left;
 
-    margin-left: 30vw;
+    margin-left: 25vw;
     font-family: Arizonia, cursive;
 }
 #userName{
@@ -123,11 +136,15 @@ margin-right: 2vw;
     text-align: center;
 margin-top: 5vh;
 }
+.photo{
+    height:60vh;
+    margin-left: 5vw;
+}
 .inf{
     display: flex;
     flex-direction: column;
     float: left;
-    margin-left: 7vw;
+    margin-left: 10vw;
 align-items: left;
     width: 30vw;
     height: 15vh;
@@ -169,6 +186,9 @@ float: left;
     font-style: initial;
     font-size: 2.5vh;
     color: pink;
+}
+.phBut{
+    height: 5vh;
 }
 .photoLike{
     background-color: white;
@@ -225,12 +245,12 @@ footer{
 
 
 }
-.footer{
+.footer-item{
 
     float: left;
     margin-left: 9vw;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 790px){
     .post{
         width: 90vw;
     }
@@ -260,6 +280,14 @@ footer{
     header{
 
         height: 25vh;
+    }
+
+}
+@media screen and (max-width: 733px) {
+
+    header{
+
+        height: 16vh;
     }
 
 }

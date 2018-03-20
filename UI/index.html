@@ -9,27 +9,26 @@
 <body>
 
 <header>
-    <button id="addPhoto" class="header"><img src="photo/addPhoto.png" width="35vw"/></button>
-
-
-    <ul class="menu" class="header">
-
-
-        <li><a>Filter</a>
+    <button id="addPhoto" ><img id="addPhotoPic" src="photo/addPhoto.png" alt="addPhohto"/></button>
+    <ul class = "menu">
+        <li>
+            <div id="filterName">Filter</div>
 
             <ul class="submenu">
                 <li>
+                   <div >name</div>
+                    <input type="text"></li>
+                <li>
+                    <div>date</div><input type="text"/></li>
+                <li><div >#tag</div>
+                    <input list="suggestions">
 
-                    <font>name</font> <input src="name"></li>
-                <li><font>date</font><input src="date"></li>
-                <li><font>#tag</font>
-                <input type = "hashtagInput" class="hashtagInput" list="suggestions">
-
-                <datalist id = "suggestions" >
-                    <option>#like</option>
-                    <option>#love</option>
-                    <option>#live</option>
-                </datalist></li>
+                    <datalist id="suggestions">
+                        <option>#like</option>
+                        <option>#love</option>
+                        <option>#live</option>
+                    </datalist>
+                </li>
                 <li>
                     <button id="fitterButton">Filter</button>
                 </li>
@@ -40,239 +39,244 @@
 
     </ul>
 
-
-    <a id="daxagram" class="header">Daxagram</a>
-    <button id="exit" class="header">Exit</button>
-    <a id="userName" class="header">user_name</a>
-
-
+    <div class="logo">Daxagram</div>
+    <button id="exit" class="header-item">Exit</button>
+    <div id="userName" class="header-item">user_name</div>
 </header>
 
-<br/>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-    <div class="inf">
 
-        <a class="photoUserName">user_name</a>
+<main>
+    <div id="posts" class="post-container">
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
 
-        <a class="photoShortDesctription">Short Description</a>
+                    <div class="photoUserName">user_name</div>
 
-        <a class="photoHashtag">#tag</a>
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
 
 
-        <a class="photoDate">dd.mm.yyyy</a>
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
+        <article class="post">
+            <img src="photo/1.jpg"  class="photo"/>
+            <div class="photoBut">
+                <div class="inf">
+
+                    <div class="photoUserName">user_name</div>
+
+                    <div class="photoShortDesctription">Short Description</div>
+
+                    <div class="photoHashtag">#tag</div>
+
+
+                    <div class="photoDate">dd.mm.yyyy</div>
+                </div>
+
+                <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>
+            </div>
+
+        </article>
     </div>
+</main>
 
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
 
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
 
-            <a class="photoUserName">user_name</a>
 
-            <a class="photoShortDesctription">Short Description</a>
 
-            <a class="photoHashtag">#tag</a>
 
 
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
-
-            <a class="photoUserName">user_name</a>
-
-            <a class="photoShortDesctription">Short Description</a>
-
-            <a class="photoHashtag">#tag</a>
-
-
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
-
-            <a class="photoUserName">user_name</a>
-
-            <a class="photoShortDesctription">Short Description</a>
-
-            <a class="photoHashtag">#tag</a>
-
-
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
-
-            <a class="photoUserName">user_name</a>
-
-            <a class="photoShortDesctription">Short Description</a>
-
-            <a class="photoHashtag">#tag</a>
-
-
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
-
-            <a class="photoUserName">user_name</a>
-
-            <a class="photoShortDesctription">Short Description</a>
-
-            <a class="photoHashtag">#tag</a>
-
-
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
-
-            <a class="photoUserName">user_name</a>
-
-            <a class="photoShortDesctription">Short Description</a>
-
-            <a class="photoHashtag">#tag</a>
-
-
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
-
-            <a class="photoUserName">user_name</a>
-
-            <a class="photoShortDesctription">Short Description</a>
-
-            <a class="photoHashtag">#tag</a>
-
-
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
-
-            <a class="photoUserName">user_name</a>
-
-            <a class="photoShortDesctription">Short Description</a>
-
-            <a class="photoHashtag">#tag</a>
-
-
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-<div class="post">
-    <img src="photo/1.jpg" height="350vw" class="photo"/>
-    <div class="photoBut">
-        <div class="inf">
-
-            <a class="photoUserName">user_name</a>
-
-            <a class="photoShortDesctription">Short Description</a>
-
-            <a class="photoHashtag">#tag</a>
-
-
-            <a class="photoDate">dd.mm.yyyy</a>
-        </div>
-
-        <button class="photoLike"><img src="photo/NotPressed.png" width="25"></button>
-        <button class="photoEdit"><img src="photo/edit.png" width="25"></button>
-        <button class="photoDelete"><img src="photo/delete.png" width="25"></button>
-    </div>
-
-</div>
-
-
-
-<br/>
 <div>
     <button id="loadMore">Load more</button>
 </div>
 <footer>
-    <a class="footer"> Daxagram</a>
-    <a class="footer" href="https://vk.com/daxa_kotova">Darya Gembitskaya</a>
-    <a class="footer">2 course 6 group</a>
-    <a class="footer" href="https://daxagemb@gmail.com">daxagemb@gmail.com</a>
-    <a class="footer">dd.mm.yyyy</a>
+    <div class="footer-item"> Daxagram</div>
+    <a class="footer-item" href="https://vk.com/daxa_kotova">Darya Gembitskaya</a>
+    <div class="footer-item">2 course 6 group</div>
+    <a class="footer-item" href="https://daxagemb@gmail.com">daxagemb@gmail.com</a>
+    <div class="footer-item">dd.mm.yyyy</div>
 </footer>
 
 </body>
+
 </html>

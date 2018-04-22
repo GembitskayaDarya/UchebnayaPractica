@@ -1,165 +1,185 @@
-var daxaModule = (function () {
-    var photoPosts = [
+let daxaModule = (function () {
+    let photoPosts = [
         {
             id: '0',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User0",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '1',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User1",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '2',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User2",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '3',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User3",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '4',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User4",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '5',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User5",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '6',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User6",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '7',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User7",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '8',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User8",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '9',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User9",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '10',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User10",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '11',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User11",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '12',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User12",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '13',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User13",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '14',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User14",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '15',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User15",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '16',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User16",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '17',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User17",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '18',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User18",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         },
         {
             id: '19',
             description: 'Description',
             createdAt: new Date('2018-02-23T23:00:00'),
             author: "User19",
-            photoLink: "photo/1.jpg"
+            photoLink: "photo/1.jpg",
+            isDeleted: 'false'
         }
     ];
 
 
     return {
-        getPhotoPosts: function (skip, top, filterConfig) {
+        /*getPhotoPosts: function (skip, top, filterConfig) {
             var foundPosts = [];
             var count = 0;
-            if (filterConfig || filterConfig.createdAt === undefined && filterConfig.author === undefined) {
+           if (filterConfig && filterConfig.createdAt === undefined && filterConfig.author === undefined) {
                 for (var i = skip; i < photoPosts.length && count < top; i++) {
                     foundPosts.push(photoPosts[i]);
                     count++;
                 }
-            } else if (filterConfig.createdAt === undefined) {
+            } else if (filterConfig.createdAt === undefined ) {
                 for (var j = skip; j < photoPosts.length && count < top; j++) {
                     if (filterConfig.author === photoPosts[j].author) {
                         foundPosts.push(photoPosts[j]);
                         count++;
                     }
                 }
-            } else if (filterConfig.author === undefined) {
+            } else if (filterConfig.author) {
                 for (var k = skip; k < photoPosts.length && count < top; k++)
                     if (filterConfig.createdAt.getUTCDate() === photoPosts[k].createdAt.getUTCDate() && filterConfig.createdAt.getUTCMonth() === photoPosts[k].createdAt.getUTCMonth() && filterConfig.createdAt.getUTCFullYear() === photoPosts[k].createdAt.getUTCFullYear()) {
                         foundPosts.push(photoPosts[k]);
@@ -173,20 +193,55 @@ var daxaModule = (function () {
                     }
             }
 
-            /*let tempPosts  = [].join(photoPosts);
-            if( author){
-                tempPosts = tempPosts.filter((post) => post.author === author);
+           let tempPosts  = [].join(photoPosts);
+            if(filterConfig && filterConfig.author){
+                tempPosts = tempPosts.filter((post) => post.author === filterConfig.author);
             }
-            if(crea)
+            if(filterConfig && filterConfig.createdAt)
+            {
+                tempPosts = tempPosts.filter((post) => post.createdAt === filterConfig.createdAt);
+            }
 
-                tempPosts.sort();
-                tempPosts.slise ()
-                */
+               // tempPosts.sort();
+                tempPosts.slice(10);
+
 
             return foundPosts;
+        },*/
+        getPhotoPosts: function (skip = 0, top = 10, filterConfig) {
+            let result;
+            if (
+                arguments.length < 3 ||
+                filterConfig === undefined ||
+                Object.getOwnPropertyNames(filterConfig).length === 0
+            ) {
+                result = photoPosts.slice(skip, skip + top);
+            } else {
+                result = photoPosts.slice(skip, skip + top).filter(element => {
+                    let flag = false;
+                    if (filterConfig.hasOwnProperty("author")) {
+                        flag = element.author === filterConfig.author;
+                    }
+                    if (filterConfig.hasOwnProperty("createdAt")) {
+                        flag =
+                            filterConfig.createdAt.getFullYear() ===
+                            element.createdAt.getFullYear() &&
+                            filterConfig.createdAt.getMonth() ===
+                            element.createdAt.getMonth() &&
+                            filterConfig.createdAt.getDate() === element.createdAt.getDate();
+                    }
+                   /* if (filterConfig.hasOwnProperty("hashTags")) {
+                        flag = filterConfig.hashTags.every(tag => {
+                            return element.hashTags.includes(tag);
+                        });
+                    }*/
+                    return flag;
+                });
+            }
+            return result;
         },
         getPhotoPost: function (id) {
-            for (var i = 0; i < photoPosts.length; i++) { //.find
+            for (let i = 0; i < photoPosts.length; i++) { //.find
                 if (photoPosts[i].id === id)
                     return photoPosts[i];
             }
@@ -207,7 +262,7 @@ var daxaModule = (function () {
             } else return !(photoPost.photoLink === undefined || ((typeof(photoPost.photoLink) !== "string") || photoPost.photoLink.length === 0));
         },
         addPhotoPost: function (photoPost) {
-            if (validatePhotoPost(photoPost)) {
+            if (daxaModule.validatePhotoPost(photoPost)) {
                 photoPost.id = photoPosts.length;
                 photoPosts.push(photoPost);
                 return true;
@@ -215,12 +270,12 @@ var daxaModule = (function () {
             return false;
         },
         editPhotoPost: function (id, photoPost) {
-            var post = getPhotoPost(id);
+            let post = daxaModule.getPhotoPost(id);
             if (post != null) {
                 photoPost.id = post.id;
                 photoPost.createdAt = post.createdAt;
                 photoPost.author = post.author;
-                if (validatePhotoPost(photoPost)) {
+                if (daxaModule.validatePhotoPost(photoPost)) {
                     post.photoLink = photoPost.photoLink;
                     post.description = photoPost.description;
                     return true;
@@ -231,9 +286,9 @@ var daxaModule = (function () {
             return false;
         },
         removePhotoPost: function (id) {
-            if (getPhotoPost(id)) {
-                var index;
-                for (var i = 0; i < photoPosts.length ; i++) {
+            if (daxaModule.getPhotoPost(id)) {
+                let index;
+                for (let i = 0; i < photoPosts.length ; i++) {
                     if (photoPosts[i].id === id)
                         index = i;
                 }
@@ -250,70 +305,53 @@ var daxaModule = (function () {
 
 
 })();
-var dom = (function(){
-    var user = "Daxa";
+let dom = (function(){
+    let user = "Daxa";
     return {
         createPostHtml: function (photoPost){
-        var container = document.getElementById('posts');
-        container.setAttribute('class', 'post-container');
-        var post = document.createElement('article');
-        post.setAttribute('class', 'post');
-        var photo = document.createElement('img');
-        photo.setAttribute('class', 'photo');
-        photo.setAttribute('src', 'photo/1.jpg');
-        post.appendChild(photo);
-        var infoAll = document.createElement('div');
-        infoAll.setAttribute('class', 'photoBut');
-        var info = document.createElement('div');
-        info.setAttribute('class', 'inf');
-        var photoUserName = document.createElement('div');
-        photoUserName.setAttribute('class', 'photoUserName');
-        info.appendChild(photoUserName);
-        var photoShortDesctription = document.createElement('div');
-        photoShortDesctription.setAttribute('class', 'photoShortDesctription');
-        info.appendChild(photoShortDesctription);
-        var photoHashtag = document.createElement('div');
-        photoHashtag.setAttribute('class', 'photoHashtag');
-        info.appendChild(photoHashtag);
-        var photoDate = document.createElement('div');
-        photoDate.setAttribute('class', 'photoDate');
-        info.appendChild(photoDate);
-        infoAll.appendChild(info);
-        var photoLike = document.createElement('button');
-        photoLike.setAttribute('class', 'photoLike');
-        var phLike = document.createElement('img');
-        phLike.setAttribute('class', 'phBut');
-        phLike.setAttribute('src', 'photo/NotPressed.png');
-        photoLike.appendChild(phLike);
-        infoAll.appendChild(photoLike);
-            if (user === photoPost.author) {
-                var photoEdit = document.createElement('button');
-                photoEdit.setAttribute('class', 'photoEdit');
-                var phEdit = document.createElement('img');
-                phEdit.setAttribute('class', 'phBut');
-                phEdit.setAttribute('src', 'photo/edit.png');
-                photoEdit.appendChild(phEdit);
-                infoAll.appendChild(photoEdit);
-            }
-            if (user === photoPost.author) {
-                var photoDelete = document.createElement('button');
-                photoDelete.setAttribute('class', 'photoDelete');
-                var phDel = document.createElement('img');
-                phDel.setAttribute('class', 'phBut');
-                phDel.setAttribute('src', 'photo/delete.png');
-                photoDelete.appendChild(phDel);
-                infoAll.appendChild(photoDelete);
-                post.appendChild(infoAll);
-                container.appendChild(post);
-            }
+            let container = document.getElementById('posts');
+            container.setAttribute('class', 'post-container');
+            let post = document.createElement('article');
+            post.setAttribute('class', 'post');
 
+
+            post.innerHTML = `
+                <img src="${photoPost.photoLink}"  class="photo"/>
+                <div class="photoBut">
+                    <div class="inf">
+    
+                        <div class="photoUserName">${photoPost.author}</div>
+    
+                        <div class="photoShortDesctription">${photoPost.description}</div>
+    
+                        <div class="photoHashtag">#tag</div>
+    
+    
+                        <div class="photoDate">${photoPost.createdAt}</div>
+                    </div>
+    
+                    <button class="photoLike"><img src="photo/NotPressed.png" class="phBut"></button>
+                    `;
+                       if(user === photoPost.author){
+                           post.innerHTML += `
+                    <button class="photoEdit"><img src="photo/edit.png" class="phBut"></button>
+                    <button class="photoDelete"><img src="photo/delete.png" class="phBut"></button>}
+                                               
+                </div>
+                       `;  }
+                       else{
+                           post.innerHTML += `
+                            </div>
+                            `;
+                       }
+container.appendChild(post);
 
     },
         showPosts: function () {
-            var postsToBeShown = daxaModule.getPhotoPosts(0, 10);
-            for(var i = 0; i < postsToBeShown.length; i++){
-                this.createPostHtml(postsToBeShown[i]);
-            }
+            let postsToBeShown = daxaModule.getPhotoPosts(0, 10);
+            postsToBeShown.forEach((post)=> this.createPostHtml(post)
+            );
+
 
         },
         addPhotoPost: function (photoPost) {
@@ -323,10 +361,21 @@ var dom = (function(){
             }
             return false;
         },
+        markRemovedPhotoPost: function(id){
+
+            let post = daxaModule.getPhotoPost(id);
+            let container = document.getElementById('posts');
+            let postToBeRemoved = document.getElementById(id);
+            if (postToBeRemoved) {
+                post.isDeleted = 'true';
+                return true;
+            }
+            return false;
+        },
         removePhotoPost: function (id) {
             daxaModule.removePhotoPost(id);
-            var container = document.getElementById('posts');
-             var postToBeRemoved = document.getElementById(id);
+            let container = document.getElementById('posts');
+             let postToBeRemoved = document.getElementById(id);
             if (postToBeRemoved != null) {
                 container.removeChild(postToBeRemoved);
                 return true;
@@ -334,8 +383,9 @@ var dom = (function(){
             return false;
         },
         editPhotoPost: function (id, photoPost) {
-            if (daxaModule.editPhotoPost(id, photoPost)) {
-                var container = document
+            let post;
+            if (post = daxaModule.editPhotoPost(id, photoPost)) {
+                let container = document
                     .getElementById('posts')
                     .replaceChild(
                         this.createPostHtml(daxaModule.getPhotoPost(id)),
@@ -347,17 +397,17 @@ var dom = (function(){
         },
         showUserElements: function () {
 
-            if (user !== undefined) {
+            if (user) {
 
-                var userInfoHeader = document.getElementById('header');
-                var addPhoto = document.createElement('button');
+                let userInfoHeader = document.getElementById('header');
+                let addPhoto = document.createElement('button');
                 addPhoto.setAttribute('id', 'addPhoto');
-                var img = document.createElement('button');
+                let img = document.createElement('button');
                 img.setAttribute('id', 'addPhotoPic');
                 img.setAttribute('src', 'photo/addPhoto.png');
                 addPhoto.appendChild(img);
                 userInfoHeader.appendChild(addPhoto);
-                var userName = document.createElement('div');
+                let userName = document.createElement('div');
                 userName.setAttribute('id', 'userName');
                 userName.setAttribute('class', 'header-item');
                 userInfoHeader.appendChild(userName);
@@ -368,19 +418,20 @@ var dom = (function(){
 
     };
 })();
-daxaModule.getPhotoPosts(0, 10);
+/*daxaModule.getPhotoPosts(0, 10);
 daxaModule.getPhotoPost('5');
 daxaModule.validatePhotoPost({description: 'hjbdfshjbdfshjbfdhjbfhjbfs'});
 daxaModule.addPhotoPost({id: '6',
     description: 'Description',
     createdAt: new Date('2018-02-23T23:00:00'),
     author: "User15",
-    photoLink: "photo/1.jpg"});
+    photoLink: "photo/1.jpg"});*/
 dom.showPosts();
-dom.addPhotoPost({id: '6',
+/*dom.addPhotoPost({id: '6',
     description: 'Description',
     createdAt: new Date('2018-02-23T23:00:00'),
     author: "User15",
-    photoLink: "photo/1.jpg"});
-dom.removePhotoPost('8');
-dom.editPhotoPost('5', {description: 'lol'});
+    photoLink: "photo/1.jpg"});*/
+//dom.removePhotoPost('8');
+//dom.removePhotoPost('6');
+//dom.editPhotoPost('5', {description: 'lol'});

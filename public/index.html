@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MainPageDaxagram</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+<header id = "header">
+    <button id="addPhoto" ><img id="addPhotoPic" src="photo/addPhoto.png" alt="addPhohto"/></button>
+    <ul class = "menu">
+        <li>
+            <div id="filterName">Filter</div>
+
+            <ul class="submenu">
+                <li>
+                   <div >name</div>
+                    <input type="text"></li>
+                <li>
+                    <div>date</div><input type="text"/></li>
+                <li><div >#tag</div>
+                    <input list="suggestions">
+
+                    <datalist id="suggestions">
+                        <option>#like</option>
+                        <option>#love</option>
+                        <option>#live</option>
+                    </datalist>
+                </li>
+                <li>
+                    <button id="fitterButton">Filter</button>
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+    <div class="logo">Daxagram</div>
+    <button id="exit" class="header-item">Exit</button>
+    <div id="userName" class="header-item">user_name</div>
+</header>
+
+
+<main>
+    <div id="posts" class="post-container">
+
+
+    </div>
+</main>
+
+
+
+
+
+
+
+<div>
+    <button id="loadMore">Load more</button>
+</div>
+<footer>
+    <div class="footer-item"> Daxagram</div>
+    <a class="footer-item" href="https://vk.com/daxa_kotova">Darya Gembitskaya</a>
+    <div class="footer-item">2 course 6 group</div>
+    <a class="footer-item" href="https://daxagemb@gmail.com">daxagemb@gmail.com</a>
+    <div class="footer-item">dd.mm.yyyy</div>
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>

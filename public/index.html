@@ -9,7 +9,7 @@
 <body>
 
 <header id = "header">
-    <button id="addPhoto" ><img id="addPhotoPic" src="photo/addPhoto.png" alt="addPhohto"/></button>
+    <button id="addPhoto" class="header-item" ><img id="addPhotoPic" src="photo/addPhoto.png" alt="addPhohto"/></button>
     <ul class = "menu">
         <li>
             <div id="filterName">Filter</div>
@@ -40,16 +40,62 @@
     </ul>
 
     <div class="logo">Daxagram</div>
-    <button id="exit" class="header-item">Exit</button>
+    <button id="logInBtn" class="header-item">Log in</button>
     <div id="userName" class="header-item">user_name</div>
 </header>
 
 
 <main>
-    <div id="posts" class="post-container">
-
-
+    <div id="posts" class="post-container clearfix">
     </div>
+    <dialog id="addPhotoDlg">
+        <form >
+            <div ><img id="photoDlg"src="photo/2.jpg"/></div>
+            <div class="addPhotoDlg">User_name</div>
+            <div class="addPhotoDlg">
+                <script LANGUAGE="JavaScript">
+                    temp_date = new Date();
+                    day = temp_date.getDate();
+                    month = temp_date.getMonth() + 1;
+                    year = temp_date.getYear()+1900;
+                    hour = temp_date.getHours();
+                    minutes = temp_date.getMinutes();
+                    if (day < 10) {
+                        day = "0" + day;
+                    }
+                    if (month <10) {
+                        month = "0" + month;
+                    }
+                    document.write(day + "." + month + "." + year + " " + hour + ":" + minutes );
+                </SCRIPT>
+            </div>
+
+           <button class="addPhotoDlg">Add photo</button>
+            <div class="addPhotoDlg">Short discription</div>
+            <div ><input></div>
+            <div class="addPhotoDlg">#tags</div>
+            <div><input></div>
+            <button class="addPhotoDlg">OK</button>
+
+        </form>
+    </dialog>
+    <dialog id="loginDlg">
+        <form >
+
+            <div class="InputLogIn" >
+                Log in:
+            <input type="text" class="InpLogInDlg" name="login"/>
+            </div>
+            <div class="InputLogIn">
+                Password:
+                <input type="password" class="InpLogInDlg" name="password"/>
+            </div>
+            <div>
+                <button  id="BtnLogInDlg" type="submit" >Log in</button>
+            </div>
+
+        </form>
+    </dialog>
 </main>
 
 
@@ -70,5 +116,6 @@
 </footer>
 
 </body>
+<script src="posts.json"></script>
 <script src="script.js"></script>
 </html>

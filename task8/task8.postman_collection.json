@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "a65b44a1-9e54-4675-8bc1-4467d0202929",
+		"name": "task8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/getPhotoPost?id=8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/getPhotoPost?id=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getPhotoPost"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/getPhotoPosts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/getPhotoPosts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getPhotoPosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/addPhotoPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/addPhotoPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addPhotoPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/editPhotoPost",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/editPhotoPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"editPhotoPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/removePhotoPost",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/removePhotoPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"removePhotoPost"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

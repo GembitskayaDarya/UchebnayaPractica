@@ -8,6 +8,11 @@ header{
     height: 8vh;
 }
 
+.clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
 
 #addPhoto{
 
@@ -16,6 +21,21 @@ header{
 
    float: left;
 
+}
+#addPhotoDlg{
+    background-color: #FAD2E0;
+    width: 40vw;
+    height: 60vh;
+
+}
+.addPhotoDlg{
+    flex-direction: column;
+    margin-top: 3vh;
+    font-size: large;
+}
+#photoDlg{
+width: 25vw;
+    float: right;
 }
 #addPhotoPic{
     height: 6vh;
@@ -115,7 +135,7 @@ margin-right: 2vw;
     margin-top: 1vh;
         color:#AEDD90;
 }
-#exit{
+#logInBtn{
     float: right;
     font-size: 4vh;
     margin-right: 5vw;
@@ -128,24 +148,43 @@ margin-right: 2vw;
 
 }
 
-
+#loginDlg{
+    background-color: #FAD2E0;
+    height: 20vh;
+}
+#BtnLogInDlg{
+    margin-top: 3vh;
+    float: top;
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+.InpLogInDlg{
+    float: right;
+}
+.InputLogIn{
+    flex-direction: column;
+    margin-top:3vh ;
+}
+.post-container {
+    text-align: center;
+}
 .post{
     float:left;
-    width: 45vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 
-    text-align: center;
-margin-top: 5vh;
+    width: 45vw;
+    margin-top: 5vh;
 }
 .photo{
     height:60vh;
-    margin-left: 5vw;
 }
 .inf{
     display: flex;
     flex-direction: column;
-    float: left;
-    margin-left: 10vw;
-align-items: left;
+    align-items: left;
     width: 30vw;
     height: 15vh;
 }
